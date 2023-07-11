@@ -1,0 +1,47 @@
+<h1>HTML</h1>
+
+<h2>Gorsellerle Calismak</h2>
+
+
+<img width="500" height="300" src="images/1.jpg" alt="guzel bir orman">
+
+<!-- title: mouse uzerine getirince text cikmasi -->
+<img width="500"  src="images/2.jpeg" title="Kedicik">
+
+<!-- border -> cerceve -->
+<img src="https://picsum.photos/400" border="3">
+
+<!-- align -> fotografin web sayfasindaki pozisyonu (left, right) -->
+<img src="https://picsum.photos/300" align="left">
+
+<!-- a>img gorsele link vermek -> href: link -->
+<a href="https://www.linkinpark.com/meteora20">
+	<img src="https://www.linkinpark.com/sites/g/files/g2000015666/files/METEORA-WORD.png" alt="linkinpark" style="width: 1000px">
+</a>
+
+
+<!-- Gorsel icinde linkleme -->
+<img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+	<area shape="rect" coords="34,44,270,350" href="https://www.apple.com/tr/mac/" alt="Computer">
+	<area shape="rect" coords="290,172,333,250" href="https://www.apple.com/tr/iphone-14-pro/" alt="Phone">
+	<area shape="circle" coords="337,300,44" href="https://www.starbucks.com.tr/" alt="Coffee">
+</map>
+
+<!-- Ekrana alert atma -->
+<img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSFZsG6oT8htOundafJFVM-O1XMdwgyb1bn5HjyHkjTgd4VC9uKThAyZO9YDVclsXAxo6gu4rfDAhGmiB7gxbtHSE-IAA" onload="resimYuklendi()">
+
+<script>
+	function resimYuklendi(){
+		alert("Resim yüklendi.");
+	}
+</script>
+
+
+<!-- Ekran boyutu degistikce farkli gorseller gosterilebilir. -->
+<picture>
+	<source srcset="https://image.freepik.com/free-photo/selective-focus-shot-brown-cat-posing-camera_181624-25909.jpg" media="(max-width: 600px)">
+	<source srcset="https://image.freepik.com/free-photo/selective-focus-shot-gray-cat-with-angry-cat-face_181624-13282.jpg"media="(max-width: 1000px)">
+	<img src="https://image.freepik.com/free-photo/white-cat-lies-woman-s-knees_8353-539.jpg" alt="kedi">
+</picture>
